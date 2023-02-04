@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+body {
+	background: #ff7844;
+	font-family: 'Open Sans', sans-serif;
+}
+
+button:focus,
+.navbar-toggler:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+header {
+	background-color: #11358a;
+	padding: 10px 0;
+
+}
+
+.navbar-brand {
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.socail-grid {
+	padding: 10px;
+	top: -35px;
+	text-align: center;
+	width: 200px;
+	right: 10px;
+	border-radius: 0px 0px 20px 20px;
+	color: #0d4cb6;
+  background-color: #fff;
+  background-size: cover;
+  -webkit-background-size: cover;
+  overflow: hidden;
+  position: absolute;
+}
+.socail-grid:after {
+  content: "";
+  width: 200%;
+  height: 0;
+  padding-top: 100%;
+  border-radius: 80%;
+  background: #11358a;
+  position: absolute;
+  top: 38px;
+  left: 54%;
+  transform: translateX(-50%);
+}
+
+.search-back {
+	border-radius: 30px;
+	background: #ff7844;
+	padding: 5px 8px;
+}
+
+.search-block {
+	width: 210px;
+	text-align: center;
+}
+
+.navbar-brand:hover {
+	color: #3F3B51;
+
+}
+
+.navbar-nav .nav-item {
+	margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #69e7f3
+}
+
+.navbar-nav .nav-link {
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 18px;
+	padding: 4px;
+}
+
+.product-title {
+	color: #11358a;
+	font-size: 16px;
+}
+
+.product-desc {
+	font-size: 12px;
+	color: #434248;
+}
+
+.prod-img {
+	height: 100px;
+	object-fit: contain;
+	max-width: 100%;
+}
+
+.vr {
+	background-color: rgb(219 237 234);
+}
+
+.dropdown-menu .dropdown-item {
+	margin-bottom: 10px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	background-color: #008489;
+	color: #fff;
+}
+
+ul.dropdown-menu:hover {
+	display: block;
+}
+
+.dropdown-mega .dropdown-menu {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+}
+
+.mega-content {
+	max-width: 85%;
+	margin: 5px auto;
+	background: white;
+	border-radius: 10px;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.dropdown-mega h5 {
+	padding-bottom: 12px;
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	margin: 0;
+}
+
+.list-group-item {
+	font-size: 16px;
+	color: #3F3B51;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	padding: 12px 0;
+}
+
+.list-group-item:hover {
+	color: #008489;
+}
+
+.btn {
+	background-color: #0AEDED;
+}
+
+.search-click {
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	width: 0px;
+	height: 35px;
+	padding: 5px;
+	background-color: transparent;
+	transition: all 0.5s;
+	cursor: pointer;
+	position: relative;
+}
+
+.search-click:focus {
+	width: 140px;
+	padding-left: 0px;
+	color: white;
+}
+
+.search-click input {
+	background: transparent;
+	border: none;
+	outline: none;
+	position: absolute;
+	width: 140px;
+	height: 35px;
+	left: 0%;
+	padding: 10px;
+}
+
+input::placeholder {
+	color: white;
+}
+
+section {
+	height: 100vh;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-content {
+	flex-grow: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-bottom: 75px;
+}
+
+.navbar-nav .nav-item {
+	height: 80px;
+	line-height: 22px;
+	align-items: center;
+	width: 125px;
+}
+
+.icon-products,
+.icon-recipes,
+.icon-tips,
+.icon-holidays,
+.icon-story {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-products {
+	background-image: url(../assets/icons/Products.svg)
+}
+
+.icon-recipes {
+	background-image: url(../assets/icons/Recipes.svg)
+}
+
+.icon-tips {
+	background-image: url(../assets/icons/Tips.svg)
+}
+
+.icon-holidays {
+	background-image: url(../assets/icons/Holidays.svg)
+}
+
+.icon-story {
+	background-image: url(../assets/icons/Story.svg)
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.navbar-brand {
+		font-size: 30px
+	}
+
+	.navbar-nav .nav-item {
+		margin: 0px;
+		border-top: 0.2px solid #ffffff78;
+		min-width: 100%;
+		display: block;
+		height: auto;
+	}
+
+	.mega-content {
+		max-width: 95%;
+		margin: 5px auto;
+		background: white;
+		border-radius: 12px;
+	}
+
+	.dropdown-menu {
+		margin-top: 0px;
+	}
+
+	.icon-products,
+	.icon-recipes,
+	.icon-tips,
+	.icon-holidays,
+	.icon-story {
+		max-width: 30px;
+		float: left;
+		padding: 25px;
+	}
+
+	.socail-grid,
+	.search-block,
+	.vr {
+		display: none;
+	}
+
+	.navbar-nav .nav-link {
+		display: inline-flex;
+		padding: 0px;
+	}
+
+	.navbar-nav .nav-link span {
+		margin-top: 15px;
+	}
+
+	.navbar {
+		margin-top: 0px;
+	}
+
+	header {
+		padding: 0px;
+	}
+
+	.fa-plus {
+		transform: rotate(45deg);
+	}
+}
